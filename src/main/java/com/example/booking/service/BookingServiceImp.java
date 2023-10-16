@@ -70,7 +70,7 @@ public class BookingServiceImp implements BookingService {
         if (booking == null) {
             return null;
         }
-        booking.setStatus(BookingStatus.CANCELED);
+        booking.setStatus(BookingStatus.REJECTED);
         return bookingRepository.save(booking);
     }
 
